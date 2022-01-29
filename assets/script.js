@@ -21,3 +21,10 @@ decreaseBtn.addEventListener('click', function(e) {
 increaseBtn.addEventListener('click', function(e) {
     updateQuantity(`Quantity: ${++quantity}`)
 })
+
+let removeBtn = document.querySelector('.remove')
+
+removeBtn.addEventListener('click', function(e) {
+    let item = document.querySelector('.cart-item')
+    item.textContent = 'Car Empty'
+})
