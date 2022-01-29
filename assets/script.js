@@ -17,3 +17,7 @@ decreaseBtn.addEventListener('click', function(e) {
     }
     updateQuantity(`Quantity: ${quantity}`)
 })
+
+increaseBtn.addEventListener('click', function(e) {
+    updateQuantity(`Quantity: ${++quantity}`)
+})
